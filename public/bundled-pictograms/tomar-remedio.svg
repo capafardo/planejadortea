@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <rect width="100" height="100" rx="20" fill="#FFF1F2"/>
+  <!-- Frasco de remédio -->
+  <rect x="22" y="38" width="28" height="46" rx="6" fill="#FFFFFF" stroke="#E11D48" stroke-width="3"/>
+  <!-- Tampa do frasco -->
+  <rect x="26" y="28" width="20" height="10" rx="2" fill="#E11D48"/>
+  <!-- Rótulo com cruz -->
+  <rect x="28" y="50" width="16" height="20" rx="3" fill="#FFE4E6"/>
+  <line x1="36" y1="55" x2="36" y2="65" stroke="#E11D48" stroke-width="2"/>
+  <line x1="31" y1="60" x2="41" y2="60" stroke="#E11D48" stroke-width="2"/>
+  <!-- Colher com gota de remédio -->
+  <g transform="rotate(15 65 50)">
+    <ellipse cx="65" cy="42" rx="12" ry="7" fill="#CBD5E1" stroke="#475569" stroke-width="2.5"/>
+    <line x1="65" y1="49" x2="65" y2="82" stroke="#475569" stroke-width="4" stroke-linecap="round"/>
+    <!-- Gota doce -->
+    <path d="M65 34 C65 34 69 38 69 41 C69 43 67 45 65 45 C63 45 61 43 61 41 C61 38 65 34 65 34 Z" fill="#F43F5E"/>
+  </g>
+</svg>

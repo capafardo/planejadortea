@@ -1,0 +1,60 @@
+{
+  "name": "rotinatea-desktop",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Aplicativo de rotinas para TEA",
+  "author": "Marcelo <marcelo@rotinatea.com>",
+  "homepage": "https://rotinatea.com",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "oxlint",
+    "preview": "vite preview",
+    "electron:build": "npm run build && electron-builder"
+  },
+  "dependencies": {
+    "better-sqlite3": "^13.0.3",
+    "lucide-react": "^1.44.0",
+    "node-edge-tts": "^1.2.10",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-router-dom": "^7.18.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/better-sqlite3": "^9.6.0",
+    "@types/node": "^24.13.3",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@vitejs/plugin-react": "^6.1.1",
+    "autoprefixer": "^10.5.6",
+    "electron": "^44.3.0",
+    "electron-builder": "^26.15.3",
+    "oxlint": "^1.81.0",
+    "postcss": "^8.5.28",
+    "tailwindcss": "^4.3.3",
+    "typescript": "~6.0.2",
+    "vite": "^8.3.0",
+    "vite-plugin-electron": "^1.1.2"
+  },
+  "main": "dist-electron/main.js",
+  "build": {
+    "appId": "com.planejadortea.app",
+    "productName": "PlanejadorTEA",
+    "directories": {
+      "output": "release"
+    },
+    "linux": {
+      "target": ["deb"],
+      "icon": "public/icon.png",
+      "executableName": "planejadortea",
+      "category": "Education",
+      "artifactName": "planejadortea.deb"
+    },
+    "files": [
+      "dist/**/*",
+      "dist-electron/**/*",
+      "public/**/*"
+    ]
+  }
+}

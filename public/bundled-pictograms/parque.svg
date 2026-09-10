@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <rect width="100" height="100" rx="20" fill="#F0FDF4"/>
+  <circle cx="80" cy="22" r="10" fill="#FBBF24" stroke="#F59E0B" stroke-width="2"/>
+  <path d="M0 80 Q50 72 100 80 L100 100 L0 100 Z" fill="#86EFAC"/>
+  <rect x="36" y="46" width="12" height="38" rx="3" fill="#78350F" stroke="#451A03" stroke-width="2"/>
+  <circle cx="32" cy="40" r="16" fill="#22C55E" stroke="#15803D" stroke-width="2.5"/>
+  <circle cx="52" cy="38" r="18" fill="#16A34A" stroke="#15803D" stroke-width="2.5"/>
+  <circle cx="42" cy="24" r="16" fill="#4ADE80" stroke="#16A34A" stroke-width="2.5"/>
+  <rect x="62" y="68" width="26" height="5" rx="1.5" fill="#B45309" stroke="#78350F" stroke-width="1.5"/>
+  <rect x="64" y="62" width="22" height="4" rx="1" fill="#D97706"/>
+  <line x1="66" y1="73" x2="66" y2="82" stroke="#451A03" stroke-width="2"/>
+  <line x1="84" y1="73" x2="84" y2="82" stroke="#451A03" stroke-width="2"/>
+  <circle cx="18" cy="85" r="3" fill="#EC4899"/>
+  <circle cx="28" cy="88" r="2.5" fill="#F59E0B"/>
+</svg>

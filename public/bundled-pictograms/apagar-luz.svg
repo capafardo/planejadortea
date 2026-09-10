@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <rect width="100" height="100" rx="20" fill="#F1F5F9"/>
+  <!-- Placa do interruptor -->
+  <rect x="28" y="20" width="44" height="60" rx="8" fill="#FFFFFF" stroke="#64748B" stroke-width="3.5"/>
+  <!-- Botão do interruptor (posição desligada) -->
+  <rect x="42" y="34" width="16" height="32" rx="3" fill="#E2E8F0" stroke="#475569" stroke-width="2"/>
+  <rect x="42" y="48" width="16" height="18" rx="2" fill="#94A3B8"/>
+  <!-- Pequeno indicador desligado -->
+  <circle cx="50" cy="40" r="2.5" fill="#CBD5E1"/>
+  <!-- Parafusos decorativos -->
+  <circle cx="50" cy="26" r="1.5" fill="#94A3B8"/>
+  <circle cx="50" cy="74" r="1.5" fill="#94A3B8"/>
+</svg>

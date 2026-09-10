@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <rect width="100" height="100" rx="20" fill="#FEF3C7"/>
+  <!-- Escova de cabelo -->
+  <g transform="rotate(-40 50 50)">
+    <!-- Cabo -->
+    <rect x="44" y="60" width="12" height="34" rx="6" fill="#8B5CF6" stroke="#6D28D9" stroke-width="3"/>
+    <!-- Corpo da escova -->
+    <rect x="36" y="20" width="28" height="44" rx="14" fill="#A78BFA" stroke="#6D28D9" stroke-width="3"/>
+    <!-- Cerdas -->
+    <circle cx="43" cy="28" r="2.5" fill="#EDE9FE"/>
+    <circle cx="57" cy="28" r="2.5" fill="#EDE9FE"/>
+    <circle cx="50" cy="35" r="2.5" fill="#EDE9FE"/>
+    <circle cx="43" cy="42" r="2.5" fill="#EDE9FE"/>
+    <circle cx="57" cy="42" r="2.5" fill="#EDE9FE"/>
+    <circle cx="50" cy="49" r="2.5" fill="#EDE9FE"/>
+    <circle cx="50" cy="56" r="2.5" fill="#EDE9FE"/>
+  </g>
+  <!-- Fios de cabelo brilhantes -->
+  <path d="M18 36 Q32 20 40 38" fill="none" stroke="#D97706" stroke-width="3" stroke-linecap="round"/>
+  <path d="M16 48 Q28 32 38 50" fill="none" stroke="#B45309" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M72 68 L78 62 M82 72 L88 66" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+</svg>

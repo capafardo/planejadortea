@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+body {
+  background-color: var(--color-slate-50);
+  color: var(--color-slate-900);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark body {
+  background-color: var(--color-slate-900);
+  color: var(--color-slate-200);
+}
+
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 1cm;
+  }
+  
+  body {
+    background-color: white !important;
+    color: black !important;
+  }
+  
+  .no-print {
+    display: none !important;
+  }
+  
+  .print-only {
+    display: block !important;
+  }
+
+  .print-page {
+    page-break-after: always;
+    break-after: page;
+    width: 100%;
+    height: 100vh; /* approximate A4 height for calculation */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen {
+  .print-only {
+    display: none !important;
+  }
+}
+

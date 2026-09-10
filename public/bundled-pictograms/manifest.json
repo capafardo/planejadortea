@@ -1,0 +1,267 @@
+[
+  {
+    "name": "Escovar os dentes",
+    "category": "Higiene",
+    "filename": "escovar-dentes.svg"
+  },
+  {
+    "name": "Tomar banho",
+    "category": "Higiene",
+    "filename": "tomar-banho.svg"
+  },
+  {
+    "name": "Lavar as mãos",
+    "category": "Higiene",
+    "filename": "lavar-maos.svg"
+  },
+  {
+    "name": "Lavar o rosto",
+    "category": "Higiene",
+    "filename": "lavar-rosto.svg"
+  },
+  {
+    "name": "Usar o banheiro",
+    "category": "Higiene",
+    "filename": "usar-banheiro.svg"
+  },
+  {
+    "name": "Pentear o cabelo",
+    "category": "Higiene",
+    "filename": "pentear-cabelo.svg"
+  },
+  {
+    "name": "Cortar as unhas",
+    "category": "Higiene",
+    "filename": "cortar-unhas.svg"
+  },
+  {
+    "name": "Secar com a toalha",
+    "category": "Higiene",
+    "filename": "secar-toalha.svg"
+  },
+  {
+    "name": "Vestir a roupa",
+    "category": "Vestuário",
+    "filename": "vestir-roupa.svg"
+  },
+  {
+    "name": "Calçar os sapatos",
+    "category": "Vestuário",
+    "filename": "calcar-sapatos.svg"
+  },
+  {
+    "name": "Calçar as meias",
+    "category": "Vestuário",
+    "filename": "calcar-meias.svg"
+  },
+  {
+    "name": "Colocar agasalho",
+    "category": "Vestuário",
+    "filename": "colocar-casaco.svg"
+  },
+  {
+    "name": "Colocar o pijama",
+    "category": "Vestuário",
+    "filename": "colocar-pijama.svg"
+  },
+  {
+    "name": "Café da manhã",
+    "category": "Alimentação",
+    "filename": "cafe-manha.svg"
+  },
+  {
+    "name": "Almoçar",
+    "category": "Alimentação",
+    "filename": "almocar.svg"
+  },
+  {
+    "name": "Jantar",
+    "category": "Alimentação",
+    "filename": "jantar.svg"
+  },
+  {
+    "name": "Beber água",
+    "category": "Alimentação",
+    "filename": "beber-agua.svg"
+  },
+  {
+    "name": "Comer fruta",
+    "category": "Alimentação",
+    "filename": "comer-fruta.svg"
+  },
+  {
+    "name": "Guardar a louça",
+    "category": "Alimentação",
+    "filename": "guardar-louca.svg"
+  },
+  {
+    "name": "Ir para a escola",
+    "category": "Escola",
+    "filename": "ir-escola.svg"
+  },
+  {
+    "name": "Transporte escolar",
+    "category": "Transportes",
+    "filename": "transporte-escolar.svg"
+  },
+  {
+    "name": "Organizar mochila",
+    "category": "Escola",
+    "filename": "mochila.svg"
+  },
+  {
+    "name": "Fazer lição",
+    "category": "Escola",
+    "filename": "fazer-licao.svg"
+  },
+  {
+    "name": "Ler livro",
+    "category": "Escola",
+    "filename": "ler-livro.svg"
+  },
+  {
+    "name": "Guardar brinquedos",
+    "category": "Escola",
+    "filename": "guardar-brinquedos.svg"
+  },
+  {
+    "name": "Pintura e artes",
+    "category": "Escola",
+    "filename": "artes-pintura.svg"
+  },
+  {
+    "name": "Ir ao dentista",
+    "category": "Saúde",
+    "filename": "dentista.svg"
+  },
+  {
+    "name": "Consulta médica",
+    "category": "Saúde",
+    "filename": "medico.svg"
+  },
+  {
+    "name": "Terapia",
+    "category": "Saúde",
+    "filename": "terapia.svg"
+  },
+  {
+    "name": "Tomar remédio",
+    "category": "Saúde",
+    "filename": "tomar-remedio.svg"
+  },
+  {
+    "name": "Brincar",
+    "category": "Lazer",
+    "filename": "brincar.svg"
+  },
+  {
+    "name": "Assistir TV",
+    "category": "Lazer",
+    "filename": "assistir-tv.svg"
+  },
+  {
+    "name": "Usar tablet",
+    "category": "Lazer",
+    "filename": "usar-tablet.svg"
+  },
+  {
+    "name": "Andar de bicicleta",
+    "category": "Lazer",
+    "filename": "andar-bicicleta.svg"
+  },
+  {
+    "name": "Passear no parque",
+    "category": "Lazer",
+    "filename": "passear-parque.svg"
+  },
+  {
+    "name": "Ouvir música",
+    "category": "Lazer",
+    "filename": "ouvir-musica.svg"
+  },
+  {
+    "name": "Respirar e acalmar",
+    "category": "Lazer",
+    "filename": "acalmar-respirar.svg"
+  },
+  {
+    "name": "Acordar",
+    "category": "Sono",
+    "filename": "acordar.svg"
+  },
+  {
+    "name": "Apagar a luz",
+    "category": "Sono",
+    "filename": "apagar-luz.svg"
+  },
+  {
+    "name": "Dormir",
+    "category": "Sono",
+    "filename": "dormir.svg"
+  },
+  {
+    "name": "Hospital",
+    "category": "Externos",
+    "filename": "hospital.svg"
+  },
+  {
+    "name": "Clínica",
+    "category": "Externos",
+    "filename": "clinica.svg"
+  },
+  {
+    "name": "Cinema",
+    "category": "Externos",
+    "filename": "cinema.svg"
+  },
+  {
+    "name": "Escola",
+    "category": "Externos",
+    "filename": "escola.svg"
+  },
+  {
+    "name": "Casa de alguém",
+    "category": "Externos",
+    "filename": "casa-alguem.svg"
+  },
+  {
+    "name": "Supermercado",
+    "category": "Externos",
+    "filename": "supermercado.svg"
+  },
+  {
+    "name": "Parque",
+    "category": "Externos",
+    "filename": "parque.svg"
+  },
+  {
+    "name": "Carro",
+    "category": "Transportes",
+    "filename": "carro.svg"
+  },
+  {
+    "name": "Uber / Carro de aplicativo",
+    "category": "Transportes",
+    "filename": "uber-app.svg"
+  },
+  {
+    "name": "Ônibus",
+    "category": "Transportes",
+    "filename": "onibus.svg"
+  },
+  {
+    "name": "Trem",
+    "category": "Transportes",
+    "filename": "trem.svg"
+  },
+  {
+    "name": "Metrô",
+    "category": "Transportes",
+    "filename": "metro.svg"
+  },
+  {
+    "name": "Andar a pé",
+    "category": "Transportes",
+    "filename": "andar-a-pe.svg"
+  }
+]

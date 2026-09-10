@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <rect width="100" height="100" rx="20" fill="#F0FDF4"/>
+  <path d="M24 35 L50 20 L76 35 L76 86 L24 86 Z" fill="#FFFFFF" stroke="#059669" stroke-width="3" stroke-linejoin="round"/>
+  <rect x="34" y="38" width="32" height="10" rx="3" fill="#D1FAE5" stroke="#10B981" stroke-width="1.5"/>
+  <text x="50" y="45" font-family="sans-serif" font-weight="bold" font-size="6" text-anchor="middle" fill="#047857">CLINICA</text>
+  <circle cx="50" cy="58" r="9" fill="#ECFDF5" stroke="#10B981" stroke-width="1.5"/>
+  <rect x="48" y="52" width="4" height="12" rx="1" fill="#10B981"/>
+  <rect x="44" y="56" width="12" height="4" rx="1" fill="#10B981"/>
+  <rect x="43" y="70" width="14" height="16" rx="2" fill="#A7F3D0" stroke="#059669" stroke-width="1.5"/>
+  <line x1="50" y1="70" x2="50" y2="86" stroke="#059669" stroke-width="1.5"/>
+  <path d="M16 60 C16 72 26 78 30 70" fill="none" stroke="#047857" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="16" cy="58" r="2.5" fill="#059669"/>
+</svg>

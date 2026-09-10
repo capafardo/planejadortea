@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <rect width="100" height="100" rx="20" fill="#E0F2FE"/>
+  <!-- Copo de água -->
+  <path d="M30 26 L36 82 C36 85 42 88 50 88 C58 88 64 85 64 82 L70 26 Z" fill="#FFFFFF" stroke="#0284C7" stroke-width="3.5"/>
+  <!-- Nível de água azul cristalina -->
+  <path d="M34 46 L36 80 C36 83 42 85 50 85 C58 85 64 83 64 80 L66 46 Q50 50 34 46 Z" fill="#38BDF8"/>
+  <!-- Canudo alegre -->
+  <path d="M54 12 L50 38 L48 80" fill="none" stroke="#F43F5E" stroke-width="4" stroke-linecap="round"/>
+  <!-- Gotas de frescor -->
+  <path d="M78 40 C78 40 84 46 84 50 C84 53 81 56 78 56 C75 56 72 53 72 50 C72 46 78 40 78 40 Z" fill="#0284C7"/>
+  <circle cx="20" cy="42" r="3" fill="#38BDF8"/>
+</svg>

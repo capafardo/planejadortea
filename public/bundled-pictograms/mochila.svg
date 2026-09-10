@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <rect width="100" height="100" rx="20" fill="#FDF2F8"/>
+  <!-- Alça da mochila -->
+  <path d="M40 28 C40 18 60 18 60 28" fill="none" stroke="#9D174D" stroke-width="4" stroke-linecap="round"/>
+  <!-- Corpo da mochila -->
+  <rect x="26" y="28" width="48" height="54" rx="14" fill="#EC4899" stroke="#9D174D" stroke-width="3.5"/>
+  <!-- Bolso frontal -->
+  <rect x="34" y="52" width="32" height="24" rx="8" fill="#F472B6" stroke="#9D174D" stroke-width="2.5"/>
+  <line x1="38" y1="52" x2="62" y2="52" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+  <!-- Chaveirinho alegre -->
+  <circle cx="68" cy="46" r="4" fill="#FBBF24" stroke="#D97706" stroke-width="1.5"/>
+</svg>

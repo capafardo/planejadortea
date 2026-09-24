@@ -23,4 +23,11 @@ dist-ssr
 *.sln
 *.sw?
 dist-electron
-release
+
+# Screenshots
+screenshots/
+
+# Release artifacts (ignorar temporarios e linux-unpacked, manter apenas .deb e scripts)
+release/*
+!release/*.deb
+!release/*.sh

@@ -10,7 +10,8 @@
     "build": "vite build",
     "lint": "oxlint",
     "preview": "vite preview",
-    "electron:build": "npm run build && electron-builder"
+    "electron:build": "npm run build && electron-builder",
+    "release": "bash release/gerar-release.sh"
   },
   "dependencies": {
     "better-sqlite3": "^13.0.3",

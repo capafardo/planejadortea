@@ -1,142 +1,123 @@
-# RotinaTEA 🧩
+# PlanejadorTEA 🧩
 
-> **Planejar hoje. Mais autonomia amanhã.**  
-> *Rotinas mais visuais, vidas mais tranquilas.*
-
-O **RotinaTEA** é uma aplicação web de tecnologia assistiva desenvolvida para o planejamento, antecipação e execução visual de rotinas para pessoas no espectro autista (TEA). A plataforma opera localmente (*offline-first*), garantindo privacidade total, acessibilidade sensorial e autonomia para cuidadores e pessoas apoiadas.
+> Aplicativo desktop para criação, agendamento e execução de rotinas visuais voltado para pessoas com Transtorno do Espectro Autista (TEA).
 
 ---
 
-## 🎯 Objetivos
+## 📌 Sobre o Projeto
 
-- **Estruturação Visual**: Apoiar cuidadores, pais e terapeutas na criação de rotinas com etapas claras, pictogramas, fotografias reais e áudio.
-- **Antecipação e Redução de Ansiedade**: Permitir a visualização prévia das sequências de atividades e preparação de planos de contingência para imprevistos.
-- **Modo Execução Sensorialmente Acolhedor**: Interface com baixa sobrecarga cognitiva, focada em uma única etapa por vez, com botões amplos e leitura por voz.
-- **Privacidade e Offline-First**: Sem transmissão de dados para a nuvem por padrão, rodando em computadores pessoais ou servidores locais com total segurança.
+O **PlanejadorTEA** é uma aplicação desktop desenvolvida com foco em acessibilidade e previsibilidade cognitiva. O objetivo é auxiliar pais, educadores e terapeutas no acompanhamento e desenvolvimento da autonomia de crianças e pessoas com TEA por meio do suporte visual e auditivo estruturado.
 
----
-
-## 📊 Status do Projeto
-
-<!-- AUTO:STATUS:START -->
-- **Fase Atual**: Qualidade e Endurecimento concluída.
-- **Versão**: `0.1.0`
-- **Última Atualização**: 2026-09-09
-<!-- AUTO:STATUS:END -->
+### ✨ Principais Recursos
+- **Criação de Rotinas Visuais:** Monte rotinas passo a passo com títulos, pictogramas e tempos de duração customizados.
+- **Biblioteca de Pictogramas:** Acompanha pictogramas pré-carregados e suporte para upload de imagens personalizadas.
+- **Execução Interativa & Timer:** Interface imersiva em tela cheia com contagem regressiva para cada etapa e avisos ao concluir.
+- **Síntese de Voz (TTS):** Leitura em áudio dos passos da rotina em português (PT-BR) para reforço auditivo.
+- **Agenda Diária:** Planejamento e organização de eventos e rotinas ao longo dos dias.
+- **Exportação para PDF / Impressão:** Geração de pranchas de rotina em formato A4 para uso impresso plastificado ou fixação em murais.
+- **Tema Claro e Escuro:** Suporte a modo escuro (Dark Mode) para maior conforto visual.
+- **Privacidade & Funcionamento Offline:** Banco de dados local (SQLite), garantindo que os dados fiquem no computador do usuário, sem necessidade de conexão com a internet.
 
 ---
 
-## 🛠️ Stack Tecnológica
+## 🚀 Instalação do Pacote (.deb)
 
-- **Backend**: Python 3.12+ / FastAPI / Pydantic / SQLAlchemy 2.x / Alembic
-- **Banco de Dados**: SQLite local (com WAL e suporte a foreign keys)
-- **Frontend**: HTML5, CSS3 moderno, JavaScript (modos Claro/Escuro acessíveis, redução de sobrecarga sensorial)
-- **Áudio / TTS**: Integração nativa com síntese de voz (piper / espeak-ng / speechSynthesis)
-- **Qualidade & Testes**: Pytest, Pytest-Asyncio, Ruff
+O instalador para distribuições Linux baseadas em Debian (como Ubuntu, Linux Mint, Debian, Pop!_OS, etc.) está localizado na pasta [`release/`](release/).
 
----
+### Opção 1: Via Terminal com APT (Recomendado)
+O comando `apt` resolve e instala automaticamente quaisquer dependências necessárias:
 
-## 📂 Estrutura do Projeto
-
-```text
-rotinatea/
-├── app/
-│   ├── main.py              # Ponto de entrada FastAPI e ciclo de vida
-│   ├── api/                 # Rotas HTTP e endpoints da API REST
-│   ├── core/                # Configurações, banco de dados, logging e segurança
-│   ├── models/              # Modelos de domínio SQLAlchemy
-│   ├── schemas/             # Schemas Pydantic para validação e serialização
-│   ├── repositories/        # Camada de persistência desacoplada
-│   ├── services/            # Regras de negócio da aplicação
-│   ├── integrations/        # Integração com síntese de voz e áudio (TTS)
-│   └── web/                 # Templates e assets estáticos (CSS, JS, imagens)
-├── data/                    # Banco SQLite, mídias locais e backups
-├── docs/                    # Documentação técnica detalhada
-├── scripts/                 # Scripts de inicialização, desenvolvimento e backup
-└── tests/                   # Testes unitários, de integração e de API
-```
-
----
-
-## 🚀 Instalação e Execução
-
-### 1. Pré-requisitos
-- Sistema operacional Linux (ou macOS / WSL2)
-- Python 3.12 ou superior
-- Git
-
-### 2. Configuração do Ambiente
+No terminal, na pasta raiz do projeto, execute:
 ```bash
-# Clonar o repositório
-git clone <url-do-repositorio>
-cd planejadorTEA
-
-# Criar e ativar o ambiente virtual
-python3 -m venv .venv
-source .venv/bin/activate
-
-# Instalar dependências
-pip install -r requirements.txt
-
-# Configurar variáveis de ambiente
-cp .env.example .env
+sudo apt install ./release/planejadortea.deb
 ```
+> **Nota:** Se você já estiver dentro do diretório `release/`, execute:
+> ```bash
+> sudo apt install ./planejadortea.deb
+> ```
 
-### 3. Execução
-
-Modo desenvolvimento (com recarregamento automático):
+### Opção 2: Via DPKG
+Caso prefira utilizar o utilitário `dpkg`:
 ```bash
-./scripts/dev.sh
+sudo dpkg -i ./release/planejadortea.deb
 ```
-
-Modo padrão / produção (com auto-instalação de pré-requisitos e abertura automática no navegador):
+Se o sistema acusar dependências faltantes, execute em seguida:
 ```bash
-./iniciar.sh
+sudo apt install -f
 ```
 
-> **Dica**: O script `./iniciar.sh` na raiz do projeto verifica os pré-requisitos do sistema, configura o ambiente virtual (`.venv`), instala dependências faltantes de `requirements.txt`, aplica migrações do banco de dados e abre automaticamente a interface web no seu navegador padrão.
-> 
-> O script conta com **resiliência automática de portas**: se a porta 8000 estiver ocupada, ele alternará automaticamente para a próxima porta livre (8001, 8002, etc.) informando no terminal. Para encerrar o servidor a qualquer momento, pressione `CONTROL + C`.
-
-Acesse no navegador (caso não abra automaticamente na porta alocada, ex: 8000):
-- Aplicação: [http://localhost:8000](http://localhost:8000) (ou na porta informada pelo script)
-- Documentação da API (Swagger): [http://localhost:8000/docs](http://localhost:8000/docs)
-- Verificação de Saúde: [http://localhost:8000/health](http://localhost:8000/health)
+### Opção 3: Pela Interface Gráfica (GUI)
+1. Abra o gerenciador de arquivos do seu sistema e navegue até a pasta `release/`.
+2. Dê um duplo clique no arquivo `planejadortea.deb`.
+3. A Central de Programas ou o instalador de pacotes da sua distribuição (ex: GDebi / Loja de Aplicativos) será aberto.
+4. Clique em **Instalar** (ou *Install Package*) e digite sua senha de administrador quando solicitado.
 
 ---
 
-## 🧪 Testes Automatizados
+## 💻 Como Executar o Aplicativo
 
-Executar a suíte de testes com cobertura:
-```bash
-pytest
-```
+Após a instalação, você pode iniciar o PlanejadorTEA de duas formas:
+- **Pelo Menu de Aplicativos:** Abra o menu de programas do sistema e pesquise por **PlanejadorTEA**.
+- **Pelo Terminal:** Digite o comando:
+  ```bash
+  planejadortea
+  ```
 
 ---
 
-## 💾 Backup Local
+## 🗑️ Como Desinstalar
 
-Para gerar uma cópia segura do banco SQLite e arquivos de mídia em `data/backups/`:
+Caso queira remover o aplicativo do sistema:
 ```bash
-./scripts/backup.sh
+sudo apt remove planejadortea
 ```
 
 ---
 
-## 🗺️ Roadmap de Fases
+## 🛠️ Desenvolvimento e Build a partir do Código-Fonte
 
-- [x] **Fase 0 — Preparação**: Fundação modular, FastAPI, SQLite, Alembic, docs e testes.
-- [x] **Fase 1 — Banco e Domínio**: Modelos de dados, repositórios e serviços de domínio.
-- [x] **Fase 2 — API REST**: Endpoints de perfis, rotinas, etapas, mídias e calendário.
-- [x] **Fase 3 — Interface de Planejamento**: Dashboard, editor de rotina e preview.
-- [x] **Fase 4 — Interface de Execução**: Modo Usuário minimalista e acessível.
-- [x] **Fase 5 — Calendário**: Agendamento diário e eventos.
-- [x] **Fase 6 — Áudio e Voz**: Síntese de fala para etapas (TTS).
-- [x] **Fase 7 — Imprevistos**: Planos alternativos e adaptações visuais.
-- [x] **Fase 8 — Qualidade e Endurecimento**: Empacotamento final, resiliência e validações completas.
+Caso queira executar o projeto em modo de desenvolvimento ou compilar um novo pacote:
+
+### Pré-requisitos e Instalação Automática
+Para instalar automaticamente todos os pacotes de sistema, ferramentas de compilação, Git LFS e dependências do projeto:
+
+```bash
+chmod +x instalar-prerequisitos.sh
+./instalar-prerequisitos.sh
+```
+
+Ou manualmente:
+- [Node.js](https://nodejs.org/) (versão 20 ou superior)
+- `npm`
+- `git-lfs` (para rastreamento do pacote `.deb`)
+
+### Passos
+1. **Instalar as dependências do Node:**
+   ```bash
+   npm install
+   ```
+
+2. **Executar em modo de desenvolvimento:**
+   ```bash
+   npm run dev
+   ```
+
+3. **Gerar um novo pacote instalador (`.deb`):**
+   Execute o script automatizado:
+   ```bash
+   ./release/gerar-release.sh
+   # ou via npm:
+   npm run release
+   ```
+   O script compilará a aplicação e colocará o pacote atualizado `planejadortea.deb` em `release/`.
 
 ---
 
-## 📄 Licença e Uso
+## 🧰 Tecnologias Utilizadas
 
-Desenvolvido para fins de tecnologia assistiva e inclusão.
+- **Desktop Framework:** [Electron](https://www.electronjs.org/)
+- **Frontend:** [React](https://react.dev/), [TypeScript](https://www.typescriptlang.org/), [Tailwind CSS](https://tailwindcss.com/)
+- **Build Tool:** [Vite](https://vitejs.dev/)
+- **Banco de Dados Local:** [better-sqlite3](https://github.com/WiseLibs/better-sqlite3)
+- **Síntese de Voz:** [node-edge-tts](https://github.com/schroffl/node-edge-tts)
+- **Ícones:** [Lucide React](https://lucide.dev/)
